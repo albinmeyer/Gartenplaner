@@ -1,0 +1,182 @@
+/*
+ 	GartenPlaner.css
+
+ 	Gartenplaner - A program to plan works in the garden.
+
+ 	Copyright (c) 2011 by Albin Meyer
+ 	albin.meyer@ergon.ch
+ 	http://www.ergon.ch/
+
+ 	This program is free software; you can redistribute it and/or modify
+ 	it under the terms of the GNU General Public License as published by
+ 	the Free Software Foundation; either version 2 of the License, or
+ 	(at your option) any later version.
+
+ 	This program is distributed in the hope that it will be useful,
+ 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ 	GNU General Public License for more details.
+
+ 	You should have received a copy of the GNU General Public License
+ 	along with this program; If not, see <http://www.gnu.org/licenses/>.
+
+ 	Last updated: Jan 3, 2011
+*/
+
+.gardenPlaner {
+    -fx-text-fill: white;
+    -fx-font: bold 14pt "Amble Cn";
+}
+
+.gardenPlanerSmall {
+    -fx-text-fill: white;
+    -fx-font: 14pt "Amble Cn";
+}
+
+.gardenPlanerGreen {
+    -fx-text-fill: green;
+    -fx-font: 14pt "Amble Cn";
+}
+
+.gardenPlanerYear {
+    -fx-text-fill: white;
+    -fx-font: bold 18pt "Amble Cn";
+}
+
+.gardenPlanerSmallBlack {
+    -fx-text-fill: black;
+    -fx-font: 14pt "Amble Cn";
+}
+
+.gardenPlanerBlack {
+    -fx-text-fill: black;
+    -fx-font: bold 14pt "Amble Cn";
+}
+
+.button {
+   -fx-text-fill: white;
+    -fx-font: 14pt "Amble Cn";
+    -fx-padding: 5;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-color: #e27817;
+    -fx-background-color: linear (0%,0%) to (0%,100%)
+        stops (0%, #f1c572) (100%, #e27817);
+    -fx-border-color: #e27817;
+    -fx-border-width: 2;
+}
+
+.button:hover{
+    -fx-background-color: linear (0%,0%) to (0%,100%)
+        stops (0%, #e27817) (100%, #f1c572);
+}
+
+.list-view {
+    -fx-font: bold 14pt "Amble Cn";
+    -fx-text-fill: white;
+    -fx-background-color: grey;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view:focused {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-cell {
+    -fx-background-color: grey;
+    -fx-padding: 5 3 5 3;
+    -fx-border-color: transparent transparent white transparent;
+}
+.list-cell:odd {
+    -fx-background-color: grey;
+}
+.list-cell:focused {
+    -fx-background-color: null;
+}
+.list-cell:focused:odd {
+    -fx-background-color: null;
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background: null;
+    -fx-background-color: null;
+    -fx-text-fill: orange;
+}
+.list-view *.scroll-bar:horizontal {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 3 0 0 0;
+}
+.list-view *.scroll-bar:vertical {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 0 0 3;
+}
+.list-view *.scroll-bar:horizontal *.thumb {
+    -fx-background-color: rgb(255,255,255,0.6);
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view *.scroll-bar:vertical *.thumb {
+    -fx-background-color: rgb(255,255,255,0.6);
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view *.scroll-bar:horizontal *.track {
+    -fx-background-color: rgb(255,255,255,0.2);
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view *.scroll-bar:vertical *.track {
+    -fx-background-color: rgb(255,255,255,0.2);
+    -fx-background-radius: 3;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view *.scroll-bar *.increment-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view *.scroll-bar *.decrement-button {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+.list-view *.scroll-bar:horizontal *.increment-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 6 0 3 0;
+    -fx-shape: null;
+}
+.list-view *.scroll-bar:vertical *.increment-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 6 0 3;
+    -fx-shape: null;
+}
+.list-view *.scroll-bar:horizontal *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 6 0 3 0;
+    -fx-shape: null;
+}
+.list-view *.scroll-bar:vertical *.decrement-arrow {
+    -fx-background-color: null;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-padding: 0 6 0 3;
+    -fx-shape: null;
+}

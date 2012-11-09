@@ -1,0 +1,39 @@
+<!--
+ 	persistence.xml
+
+ 	Gartenplaner - A program to plan works in the garden.
+
+ 	Copyright (c) 2011 by Albin Meyer
+ 	albin.meyer@ergon.ch
+ 	http://www.ergon.ch/
+
+ 	This program is free software; you can redistribute it and/or modify
+ 	it under the terms of the GNU General Public License as published by
+ 	the Free Software Foundation; either version 2 of the License, or
+ 	(at your option) any later version.
+
+ 	This program is distributed in the hope that it will be useful,
+ 	but WITHOUT ANY WARRANTY; without even the implied warranty of
+ 	MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ 	GNU General Public License for more details.
+
+ 	You should have received a copy of the GNU General Public License
+ 	along with this program; If not, see <http://www.gnu.org/licenses/>.
+
+ 	Last updated: Jan 3, 2011
+-->
+<persistence>
+    <persistence-unit name="gartenplaner" transaction-type="RESOURCE_LOCAL">
+        <properties>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.HSQLDialect"/>
+            <!-- only turn on auto-update during development, if datamodel changes -->
+            <!-- for production, it has to be turned off -->
+            <!--property name="hibernate.hbm2ddl.auto" value="create"/-->
+            <property name="hibernate.connection.driver_class" value="org.hsqldb.jdbcDriver"/>
+            <property name="hibernate.connection.username" value="sa"/>
+            <property name="hibernate.connection.password" value=""/>
+            <!-- the database resides in the files/directories "data*" in the main application directory -->
+            <property name="hibernate.connection.url" value="jdbc:hsqldb:file:data"/>
+        </properties>
+    </persistence-unit>
+</persistence>
